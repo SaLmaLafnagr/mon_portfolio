@@ -8,37 +8,75 @@
 </head>
 <body>
 
-    
     <header>
         <h1>WELCOME.</h1>
         <div class="social-icons">
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            
+            <a href="https://www.linkedin.com/in/salma-lafnager-766062351/" target="_blank" class="social-link linkedin">LinkedIn</a>
         </div>
     </header>
 
-    
     <section class="main">
         <div class="left">
             <h2>ENGINEERING<br>STUDENT</h2>
             <div class="footer-links">
-                <a href="#">PROJECTS</a>
-                <a href="#">JOURNAL</a>
-                <a href="#">CERTIFICATES</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#journal">JOURNAL</a>
+                <a href="#skills">SKILLS</a>
                 <a href="mailto:salma.lafnager@gmail.com">salma.lafnager@gmail.com</a>
             </div>
         </div>
         <div class="right">
             <div class="image-container">
                 <img src="https://res.cloudinary.com/dioieyg2i/image/upload/v1739646936/PP_b1bl32.png" alt="Profile Image">
-
-
-
             </div>
         </div>
     </section>
+
+    <!-- Bouton pour accéder au formulaire -->
+    <button class="btn-formulaire" onclick="allerAuFormulaire()">Remplir le formulaire</button>
+
+    <!-- Section Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Pomodoro Timer Project</p>
+        <!-- Bouton pour accéder au Pomodoro Timer -->
+        <button class="btn-pomodoro" onclick="allerAuPomodoro()">Pomodoro Timer</button>
+        
+    </section>
+
+    <!-- Section Journal -->
+    <section id="journal">
+        <h2>My Journal</h2>
+        <ul>
+            <li>Baccalauréat en sciences mathématiques</li>
+            <li>Études en classe préparatoire au lycée Lissane Eddine Ibn Alkhatib</li>
+            <li>Première année de cycle d'ingénieur à l'ENSA Khouribga</li>
+        </ul>
+    </section>
+
+    <!-- Section Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>MySQL</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <script src="Script.js"></script>
+    <script>
+        function allerAuFormulaire() {
+            window.location.href = "formulaire.html"; // Redirige vers la page du formulaire
+        }
+        function allerAuPomodoro() {
+            window.location.href = "index3.html"; // Redirige vers la page du Pomodoro Timer
+        }
+    </script>
 
 </body>
 </html>
