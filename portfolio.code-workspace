@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "../portfolio"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../tp1"
+		},
+		{
+			"path": "../chinook"
+		},
+		{
+			"path": "../xml"
+		},
+		{
+			"path": "../tp2 traitement donnés"
+		},
+		{
+			"path": "../tp2 dev"
+		},
+		{
+			"path": "../DEVOIR2"
+		},
+		{
+			"path": "../mini projet php"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Dégradé bleu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundAnimation 8s infinite alternate; /* Animation de fond */
+}
+
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(to right, #4facfe, #00f2fe); }
+    100% { background: linear-gradient(to right, #00f2fe, #4facfe); }
+}
+
+.result-container {
+    width: 60%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #4facfe;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: titleAnimation 1.5s ease-in-out;
+}
+
+@keyframes titleAnimation {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.result-group {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-bottom: 2px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.result-group:hover {
+    background-color: #f8f8f8;
+}
+
+.result-group strong {
+    color: #4facfe;
+    font-weight: 600;
+}
+
+.result-group:last-child {
+    border-bottom: none;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4facfe;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.button-container {
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #4facfe, #00c6fb);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    font-weight: bold;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.2);
+    animation: buttonAnimation 1.5s ease-in-out;
+}
+
+@keyframes buttonAnimation {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+button:hover {
+    background: linear-gradient(to right, #00c6fb, #4facfe);
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 768px) {
+    .result-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .result-group {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+}
